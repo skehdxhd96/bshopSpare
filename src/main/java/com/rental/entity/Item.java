@@ -16,6 +16,7 @@ import java.time.LocalDateTime;
 public class Item {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "item_id")
     private Long id;       //상품 코드
 
@@ -30,7 +31,7 @@ public class Item {
 
     @Column(nullable = false)
     private String itemDetail; //상품 상세 설명
-    @Enumerated ()
+    @Enumerated (EnumType.STRING)
     private ItemSellStatus itemSellStatus; //상품 판매 상태
 
     private LocalDateTime regtime; //상품 등록 시간
