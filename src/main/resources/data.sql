@@ -1,0 +1,2 @@
+insert into user(id, name, nickname, password, email, role, userIntro, address)
+values (1, "test", "testNickname", "$1sdlfksclmiesmlkslkdlskjcmlks", "test@test.com", "ROLE.BUYER", "hello world!", "hello address!");
